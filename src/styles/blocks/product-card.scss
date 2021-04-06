@@ -10,8 +10,16 @@
     height: 134px;
     margin-top: 29px;
     margin-bottom: 45px;
-  }
+    transition: $mainTransition;
+    transition-timing-function: linear;
 
+    
+    &:hover {
+      transform: scale(1.2);
+      border: 3px solid #f3f3f3;
+    }
+  }
+  
   &__name-code {
     margin-bottom: 15px;
     width: $cardContentWidth;

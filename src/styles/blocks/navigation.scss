@@ -28,6 +28,7 @@
   &__links {
     text-decoration: none;
     color: black;
+    transition: $mainTransition;
     
     &:hover {
       color: $brandColor;
