@@ -1,11 +1,13 @@
 .product-card {
-  @extend %flexAbsoluteCenter;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   width: $productCardWidth;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
+  justify-items: center;
 
   &__image {
+    grid-column: 2 / -2;
     width: 160px;
     height: 134px;
     margin-top: 29px;
@@ -13,6 +15,7 @@
   }
 
   &__name-code {
+    grid-column: 2 / -2;
     margin-bottom: 15px;
     width: $cardContentWidth;
   }
@@ -33,6 +36,7 @@
   }
 
   &__rating {
+    grid-column: 2 / -2;
     @extend %flexSpaseBetweenCenter;
     width: $cardContentWidth;
     margin-bottom: 21px;
@@ -40,6 +44,7 @@
 
   &__stars {
     display: inline-flex;
+    
 
     @for $index from 1 through 5 {
       &--#{$index} > .product-card__star:nth-child(-n+#{$index}) {
@@ -63,6 +68,7 @@
   }
 
   &__price-label {
+    grid-column: 2 / -2;
     @extend %flexSpaseBetweenCenter;
     width: $cardContentWidth;
     margin-bottom: 19px;
@@ -81,6 +87,7 @@
   }
 
   &__buy-button {
+    grid-column: 2 / -2;
     margin-bottom: 15px;
   }
 }

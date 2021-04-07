@@ -4,8 +4,3 @@ $headerHeight: 60px;
 $productCardWidth: 200px;
 $cardHorizontalContentMargins: 15px;
 $cardContentWidth: $productCardWidth - $cardHorizontalContentMargins*2;
-
-$betweenCards: 48px;
-$quantityCardsInRow: 4;
-$productsWidth: $productCardWidth * $quantityCardsInRow 
-  + $betweenCards * ($quantityCardsInRow - 1);

@@ -4,7 +4,6 @@ $headerContentSideMargin: 50px;
 .header {
   display: grid;
   height: $headerHeight;
-  margin-bottom: $headerContentSideMargin;
   grid-template-columns: $logoSize+$headerContentSideMargin 1fr auto;
   align-items: center;
   &__logo {

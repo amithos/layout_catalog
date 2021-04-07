@@ -1,7 +1,4 @@
-$navigationLineHeight: 14px;
-
 .navigation {
-  display: inline-flex;
   font-size: 12px;
   line-height: 14px;
   font-weight: 500;
@@ -14,7 +11,10 @@ $navigationLineHeight: 14px;
   &__item {
     display: flex;
     list-style-type: none;
-    margin: auto 10px;
+    height: $headerHeight;
+    align-items: center;
+    position: relative;
+    margin: auto;
 
     &:first-child {
       margin-left: 0;
@@ -28,7 +28,7 @@ $navigationLineHeight: 14px;
   &__links {
     text-decoration: none;
     color: black;
-    padding: auto 0;
+    padding: $headerHeight/2 10px;
     
     &:hover {
       color: $brandColor;
@@ -43,8 +43,8 @@ $navigationLineHeight: 14px;
     content: "";
     position: absolute;
     bottom: 0;
-    right: 0;
-    left: 0;
+    right: 10px;
+    left: 10px;
     height: 4px;
     border-radius: 8px;
     background-color: $brandColor;

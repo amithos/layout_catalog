@@ -1,6 +1,6 @@
 .products {
-  @extend %flexJustifyCenter; 
-  width: $productsWidth;
-  flex-wrap: wrap;
-  gap: $betweenCards;
+  display: grid;
+  gap: 48px;
+  grid-template-columns: repeat(4, $productCardWidth);
+  grid-auto-rows: repeat(auto-fill);
 }

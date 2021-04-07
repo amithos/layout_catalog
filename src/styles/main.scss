@@ -20,6 +20,10 @@ html {
   font-family: Roboto, sans-serif;
 }
 
+body > :first-child {
+  margin-bottom: $headerContentSideMargin;
+}
+
 h2,
 p,
 ul,
