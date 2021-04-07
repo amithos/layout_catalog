@@ -1,4 +1,7 @@
+$navigationLineHeight: 14px;
+
 .navigation {
+  display: inline-flex;
   font-size: 12px;
   line-height: 14px;
   font-weight: 500;
@@ -9,11 +12,8 @@
   }
   
   &__item {
-    list-style-type: none;
     display: flex;
-    height: $headerHeight;
-    align-items: center;
-    position: relative;
+    list-style-type: none;
     margin: auto 10px;
 
     &:first-child {
@@ -28,6 +28,7 @@
   &__links {
     text-decoration: none;
     color: black;
+    padding: auto 0;
     
     &:hover {
       color: $brandColor;
